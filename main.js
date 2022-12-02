@@ -825,20 +825,24 @@ let mika = [
 ]
 
 
+// get a reference to the table node
+let myTableNode = document.getElementById('myTable')
 
-let tr = document.createElement('tr')
-let td = document.createElement('td')
 
+// process each entry in the data source
+mika.forEach(entry => {
+    let tr = document.createElement('tr')
 
-// forEach and for in loop to try
-// mika.forEach(handlebar => {
-//     for (let key in handlebar) {
-//         console.log(tr.innerHTML = (`${handlebar[key]}`))
-//         // console.log(`${key}: ${handlebar[key]}`)
-//         // console.log(td.innerHTML = (handlebar[key]))
-//         document.body.append(tr.cloneNode(true))
-//     }
-// })
+    // process each field in the data entry
+    for (let key in entry) {
+        let td = document.createElement('td')
+        // create a new table cell element
+        td.innerHTML = (entry[key])
+        //set its inner text
+        tr.append(td) // append the cell to the end of the current table row
+    }
+    myTableNode.append(tr)
+})
 
 
 
@@ -849,19 +853,17 @@ let td = document.createElement('td')
 //     console.log(protaper[i])
 // }
 
-// console.log('--------------------------------')
 
 // // foreach method
 // phoneix.forEach(handlebar => console.log(handlebar))
 
-// console.log('--------------------------------')
 
 
 // for of loop to try 
-for (let handlebar of tusk) {
-    console.log(td.innerHTML = `${handlebar.name}`)
-    // document.body.appendChild(td.cloneNode(true))
-    console.log((JSON.stringify(handlebar.width)))
-    console.log((JSON.stringify(handlebar.height)))
-    console.log((JSON.stringify(handlebar.sweep)))
-}
+// for (let handlebar of tusk) {
+//     console.log(td.innerHTML = `${handlebar.name}`)
+//     // document.body.appendChild(td.cloneNode(true))
+//     console.log((JSON.stringify(handlebar.width)))
+//     console.log((JSON.stringify(handlebar.height)))
+//     console.log((JSON.stringify(handlebar.sweep)))
+// }
