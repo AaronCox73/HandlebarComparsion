@@ -366,7 +366,7 @@ let renthal = [
         type: '7/8th'
     },
     {
-        name: ' RICKY JOHNSON / CR HIGH',
+        name: 'RICKY JOHNSON / CR HIGH',
         number: 918,
         width: 801,
         height: 99,
@@ -824,46 +824,97 @@ let mika = [
     }
 ]
 
-
+// selecting btn to set up click events
+let goBtn = document.getElementById('goBtn')
+let filterBtn = document.getElementById('filterBtn')
+let alphaBtn = document.getElementById('alphaBtn')
 // get a reference to the table node
 let myTableNode = document.getElementById('myTable')
 
-
-// process each entry in the data source
-mika.forEach(entry => {
-    let tr = document.createElement('tr')
-
-    // process each field in the data entry
-    for (let key in entry) {
-        let td = document.createElement('td')
-        // create a new table cell element
-        td.innerHTML = (entry[key])
-        //set its inner text
-        tr.append(td) // append the cell to the end of the current table row
-    }
-    myTableNode.append(tr)
-})
+// get all handlebar regardless of brand
+let handlebars = (protaper.concat(renthal).concat(tusk).concat(phoneix.concat(astra).concat(ODI).concat(mika)))
 
 
 
-// for loop to try
-// for (let i = 0; i < protaper.length; i++) {
-//     li.innerHTML = (JSON.stringify(protaper[i]))
-//     document.body.appendChild(li.cloneNode(true))
-//     console.log(protaper[i])
-// }
+// sort things alphabetically
+
+// console.log(handlebars.sort(function (a, b) {
+//     if (a.name < b.name) {
+//         return -1
+//     }
+//     if (a.name > b.name) {
+//         return 1
+//     }
+//     return 0
+// }))
 
 
-// // foreach method
-// phoneix.forEach(handlebar => console.log(handlebar))
+
+function produceTable(handlebarBrand) {
+    // create header that has name of bar manufacturer
+
+    // create Table Header for each name / width / height / sweep
+    let nameTH = document.createElement('th')
+    nameTH.innerHTML = 'Name'
+    myTableNode.append(nameTH)
+    let widthTH = document.createElement('th')
+    widthTH.innerHTML = 'Width'
+    myTableNode.append(widthTH)
+    let heightTH = document.createElement('th')
+    heightTH.innerHTML = 'Height'
+    myTableNode.append(heightTH)
+    let sweepTH = document.createElement('th')
+    sweepTH.innerHTML = 'Sweep'
+    myTableNode.append(sweepTH)
 
 
+    // process each entry in the data source
+    handlebarBrand.forEach(entry => {
+        let tr = document.createElement('tr')
 
-// for of loop to try 
-// for (let handlebar of tusk) {
-//     console.log(td.innerHTML = `${handlebar.name}`)
-//     // document.body.appendChild(td.cloneNode(true))
-//     console.log((JSON.stringify(handlebar.width)))
-//     console.log((JSON.stringify(handlebar.height)))
-//     console.log((JSON.stringify(handlebar.sweep)))
-// }
+        // process each field in the data entry
+        for (let key in entry) {
+            let td = document.createElement('td')
+            // create a new table cell element
+            td.innerHTML = (entry[key])
+            //set its inner text
+            tr.append(td) // append the cell to the end of the current table row
+        }
+        myTableNode.append(tr)
+    })
+}
+
+
+produceTable(mika)
+produceTable(astra)
+
+
+//set up button to run search function
+filterBtn.addEventListener('click', function () { produceTable(handlebars) })
+
+
+function findSimilarBar() {
+    // select boxes
+    let widthBox = document.getElementById('widthBox')
+    let heightBox = document.getElementById('heightBox')
+    let sweepBox = document.getElementById('sweepBox')
+
+    // select the value within the boxes
+    widthBox.addEventListener('keyup', function (e) {
+        console.log(this.value)
+    })
+    heightBox.addEventListener('keyup', function (e) {
+        console.log(this.value)
+    })
+    sweepBox.addEventListener('keyup', function (e) {
+        console.log(this.value)
+    })
+
+    // make if statement if number is within 2 mil 
+    // of inputs produce a table with these handlebars 
+    //if widthBox.value is === entry key (?) +2 or -2 
+
+    //when go is clicked it produces new table with similar handlebars .filter?
+}
+
+findSimilarBar()
