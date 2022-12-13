@@ -831,6 +831,7 @@ let alphaBtn = document.getElementById('alphaBtn')
 let sortByWidthBtn = document.getElementById('sortByWidth')
 let sortByHeightBtn = document.getElementById('sortByHeight')
 let sortBySweepBtn = document.getElementById('sortBySweep')
+let sortByAlphaBtn = document.getElementById('alphaBtn')
 // get a reference to the table node
 let myTableNode = document.getElementById('myTable')
 
@@ -839,17 +840,19 @@ let handlebars = (protaper.concat(renthal).concat(tusk).concat(phoneix.concat(as
 
 
 
-// sort things alphabetically
+// sort things alphabetically - function
 
-// console.log(handlebars.sort(function (a, b) {
-//     if (a.name < b.name) {
-//         return -1
-//     }
-//     if (a.name > b.name) {
-//         return 1
-//     }
-//     return 0
-// }))
+let sortAlphabetically = function () {
+    handlebars.sort(function (a, b) {
+        if (a.name < b.name) {
+            return -1
+        }
+        if (a.name > b.name) {
+            return 1
+        }
+        return 0
+    })
+}
 
 // sort things by width function
 let sortByWidth = function () {
@@ -863,7 +866,7 @@ let sortByWidth = function () {
 // })
 // console.log(sortByHeight2)
 
-// sort things by height
+// sort things by height function
 let sortByHeight = function () {
     handlebars.sort(
         (h1, h2) => (h1.height < h2.height) ? 1 : (h1.height > h2.height) ? -1 : 0
@@ -871,7 +874,7 @@ let sortByHeight = function () {
 }
 
 
-// sort things by sweep 
+// sort things by sweep function
 let sortBySweep = function () {
     handlebars.sort(
         (h1, h2) => (h1.sweep < h2.sweep) ? 1 : (h1.sweep > h2.sweep) ? -1 : 0)
@@ -922,7 +925,16 @@ function produceTable(handlebarBrand, callback) {
 //set up button to run search function ???? unsure what I wanted to accomplish here 
 filterBtn.addEventListener('click', function () { produceTable(handlebars) })
 
+
+// SORT BUTTONS
+
 // sort by width per table. 
+sortByAlphaBtn.addEventListener('click', function () {
+    // produce the table then once that is produced call the sortbywidth function (callback)
+    produceTable(handlebars, function () {
+        sortAlphabetically()
+    })
+})
 sortByWidthBtn.addEventListener('click', function () {
     // produce the table then once that is produced call the sortbywidth function (callback)
     produceTable(handlebars, function () {
