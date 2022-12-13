@@ -828,6 +828,9 @@ let mika = [
 let goBtn = document.getElementById('goBtn')
 let filterBtn = document.getElementById('filterBtn')
 let alphaBtn = document.getElementById('alphaBtn')
+let sortByWidthBtn = document.getElementById('sortByWidth')
+let sortByHeightBtn = document.getElementById('sortByHeight')
+let sortBySweepBtn = document.getElementById('sortBySweep')
 // get a reference to the table node
 let myTableNode = document.getElementById('myTable')
 
@@ -848,9 +851,34 @@ let handlebars = (protaper.concat(renthal).concat(tusk).concat(phoneix.concat(as
 //     return 0
 // }))
 
+// sort things by width function
+let sortByWidth = function () {
+    handlebars.sort(
+        (h1, h2) => (h1.width < h2.width) ? 1 : (h1.width > h2.width) ? -1 : 0
+    )
+}
+
+// const sortByHeight2 = handlebars.sort((a, b) => {
+//     return a.height - b.height
+// })
+// console.log(sortByHeight2)
+
+// sort things by height
+let sortByHeight = function () {
+    handlebars.sort(
+        (h1, h2) => (h1.height < h2.height) ? 1 : (h1.height > h2.height) ? -1 : 0
+    )
+}
 
 
-function produceTable(handlebarBrand) {
+// sort things by sweep 
+let sortBySweep = function () {
+    handlebars.sort(
+        (h1, h2) => (h1.sweep < h2.sweep) ? 1 : (h1.sweep > h2.sweep) ? -1 : 0)
+}
+
+
+function produceTable(handlebarBrand, callback) {
     // create header that has name of bar manufacturer
 
     // create Table Header for each name / width / height / sweep
@@ -881,16 +909,42 @@ function produceTable(handlebarBrand) {
             tr.append(td) // append the cell to the end of the current table row
         }
         myTableNode.append(tr)
+        callback()
     })
+
 }
 
 
-produceTable(mika)
-produceTable(astra)
+// produceTable(mika)
+// produceTable(astra)
 
 
-//set up button to run search function
+//set up button to run search function ???? unsure what I wanted to accomplish here 
 filterBtn.addEventListener('click', function () { produceTable(handlebars) })
+
+// sort by width per table. 
+sortByWidthBtn.addEventListener('click', function () {
+    // produce the table then once that is produced call the sortbywidth function (callback)
+    produceTable(handlebars, function () {
+        sortByWidth()
+    })
+})
+
+sortByHeightBtn.addEventListener('click', function () {
+    // produce the table then once that is produced call the sortbyheight function (callback)
+    produceTable(handlebars, function () {
+        sortByHeight()
+    })
+
+})
+
+sortBySweepBtn.addEventListener('click', function () {
+    // produce the table then once that is produced call the sortbyheight function (callback)
+    produceTable(handlebars, function () {
+        sortBySweep()
+    })
+
+})
 
 
 function findSimilarBar() {
@@ -912,6 +966,8 @@ function findSimilarBar() {
 
     // make if statement if number is within 2 mil 
     // of inputs produce a table with these handlebars 
+
+
     //if widthBox.value is === entry key (?) +2 or -2 
 
     //when go is clicked it produces new table with similar handlebars .filter?
