@@ -888,6 +888,7 @@ function produceTable(handlebarBrand, callback) {
     let nameTH = document.createElement('th')
     nameTH.innerHTML = 'Name'
     myTableNode.append(nameTH)
+
     let widthTH = document.createElement('th')
     widthTH.innerHTML = 'Width'
     myTableNode.append(widthTH)
@@ -912,13 +913,13 @@ function produceTable(handlebarBrand, callback) {
             tr.append(td) // append the cell to the end of the current table row
         }
         myTableNode.append(tr)
-        callback()
+        // callback()
     })
 
 }
 
 
-// produceTable(mika)
+produceTable(mika)
 // produceTable(astra)
 
 
