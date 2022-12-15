@@ -18,11 +18,15 @@
     <input type="text" id="heightBox" name="" placeholder="Height(mm)">
     <input type="text" id="sweepBox" name="" placeholder="Sweep(mm)">
     <button id="goBtn">GO!</button>
-    <button id="filterBtn">Filter All</button>
-    <button id="alphaBtn">Alphabetical</button>
-    <button id="sortByWidth">Width</button>
-    <button id="sortByHeight">Height</button>
-    <button id="sortBySweep">Sweep</button>
+    <div class="dropdown">
+        <button id="filterBtn">Select Filter</button>
+        <div class="dropdown-content">
+            <button id="alphaBtn">Alphabetical</button>
+            <button id="sortByWidth">Width</button>
+            <button id="sortByHeight">Height</button>
+            <button id="sortBySweep">Sweep</button>
+        </div>
+    </div>
     <!-- // drop down - filter by width, height, Sweep, Alphabetically(?), by brand -->
 
     <div id="myTable">

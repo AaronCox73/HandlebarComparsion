@@ -963,7 +963,7 @@ function produceTable2(handlebarBrand) {
 filterBtn.addEventListener('click', function () { produceTable(handlebars) })
 
 
-// SORT BUTTONS
+// SORT/filter BUTTONS
 
 // sort by width per table. 
 sortByAlphaBtn.addEventListener('click', function () {
@@ -995,13 +995,13 @@ sortBySweepBtn.addEventListener('click', function () {
 
 })
 
-produceTable2(mika)
-produceTable2(astra)
-produceTable2(protaper)
-produceTable2(renthal)
-produceTable2(tusk)
-produceTable2(phoneix)
-produceTable2(ODI)
+// produceTable2(mika)
+// produceTable2(astra)
+// produceTable2(protaper)
+// produceTable2(renthal)
+// produceTable2(tusk)
+// produceTable2(phoneix)
+// produceTable2(ODI)
 
 
 
