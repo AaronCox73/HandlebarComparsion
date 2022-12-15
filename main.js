@@ -83,375 +83,375 @@ let renthal = [
 
     {
         name: 'YAM YZ 07-23 / YZF 07-17',
-        number: 602,
+        // number: 602,
         width: 801,
         height: 88,
         sweep: 56,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'Reed/Windham',
-        number: 603,
+        // number: 603,
         width: 800,
         height: 98,
         sweep: 55,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'RC / HON CRF 04-18 KAW KX/KXF 2006-20',
-        number: 604,
+        // number: 604,
         width: 804,
         height: 104,
         sweep: 54,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'RICKY JOHNSON / CR HIGH / KTM ENDURO 2017-18',
-        number: 605,
+        // number: 605,
         width: 805,
         height: 97,
         sweep: 65,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'RC HIGH',
-        number: 609,
+        // number: 609,
         width: 802,
         height: 120,
         sweep: 56,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'ENDURO HIGH',
-        number: 613,
+        // number: 613,
         width: 835,
         height: 135,
         sweep: 78,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: '5.0 IN TRIALS',
-        number: 660,
+        // number: 660,
         width: 817,
         height: 109,
         sweep: 49,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'Enduro Medium',
-        number: 664,
+        // number: 664,
         width: 787,
         height: 79,
         sweep: 75,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'Vintage/Desert',
-        number: 666,
+        // number: 666,
         width: 850,
         height: 119,
         sweep: 74,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'KTM SX/SX-F 09-12 SUZI RM/RMZ 06-13 YAM YZ-F 18-21',
-        number: 672,
+        // number: 672,
         width: 806,
         height: 85,
         sweep: 56,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'TRIALS 100 Bou/Lampkin',
-        number: 673,
+        // number: 673,
         width: 819,
         height: 100,
         sweep: 47,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'ENDURO',
-        number: 693,
+        // number: 693,
         width: 794,
         height: 101,
         sweep: 73,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'LARRY ROESELER / BAJA RACER',
-        number: 699,
+        // number: 699,
         width: 784,
         height: 98,
         sweep: 81,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'HONDA CRF150/230 2016-',
-        number: 701,
+        // number: 701,
         width: 793,
         height: 83,
         sweep: 73,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'CR HIGH / Ricky Johnson',
-        number: 722,
+        // number: 722,
         width: 800,
         height: 95,
         sweep: 63,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: '5.5 in trials',
-        number: 735,
+        // number: 735,
         width: 817,
         height: 122,
         sweep: 49,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: '4.5 in trials',
-        number: 742,
+        // number: 742,
         width: 823,
         height: 104,
         sweep: 50,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'Enduro',
-        number: 745,
+        // number: 745,
         width: 781,
         height: 102,
         sweep: 54,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
 
     {
         name: 'SUZUKI RM125/250 96-01',
-        number: 759,
+        // number: 759,
         width: 805,
         height: 72,
         sweep: 65,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: 'JIMMY BUTTON',
-        number: 764,
+        // number: 764,
         width: 814,
         height: 111,
         sweep: 68,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
     {
         name: '6.0 in trials',
-        number: 768,
+        // number: 768,
         width: 828,
         height: 126,
         sweep: 51,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'CR Mid',
-        number: 773,
+        // number: 773,
         width: 801,
         height: 88,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'SUZUKI RM 2004 & KAWASAKI KX',
-        number: 779,
+        // number: 779,
         width: 803,
         height: 75,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'CR LOW',
-        number: 790,
+        // number: 790,
         width: 803,
         height: 82,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'RC HIGH',
-        number: 809,
+        // number: 809,
         width: 814,
         height: 119,
         sweep: 56,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'CRF150R ADULT BAR',
-        number: 816,
+        // number: 816,
         width: 783,
         height: 137,
         sweep: 44,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'MCGRATH / KTM SX125-450 2016+ / Suzuki 2018+',
-        number: 821,
+        // number: 821,
         width: 813,
         height: 78,
         sweep: 54,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
     {
         name: 'KTM LOW',
-        number: 822,
+        // number: 822,
         width: 808,
         height: 83,
         sweep: 41,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
     {
         name: 'KTM HIGH / HUSQ ENDURO 2018-21',
-        number: 826,
+        // number: 826,
         width: 805,
         height: 95,
         sweep: 42,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
     {
         name: 'VILLOPOTO/STEWART/KTM 2011-16',
-        number: 827,
+        // number: 827,
         width: 811,
         height: 92,
         sweep: 52,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
     {
         name: 'TRIALS 110',
-        number: 829,
+        // number: 829,
         width: 816,
         height: 115,
         sweep: 45,
-        type: 'Fatbar'
+        // type: 'Fatbar'
     },
     {
         name: 'VINTAGE MID',
-        number: 837,
+        // number: 837,
         width: 874,
         height: 145,
         sweep: 120,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'VINTAGE HIGH',
-        number: 838,
+        // number: 838,
         width: 840,
         height: 155,
         sweep: 88,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'RICKY JOHNSON / CR HIGH',
-        number: 918,
+        // number: 918,
         width: 801,
         height: 99,
         sweep: 65,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'YAM YZ/YZF 06',
-        number: 921,
+        // number: 921,
         width: 816,
         height: 85,
         sweep: 41,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'RC HIGH',
-        number: 922,
+        // number: 922,
         width: 812,
         height: 120,
         sweep: 58,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'YZ/WR 1997-2004',
-        number: 966,
+        // number: 966,
         width: 807,
         height: 88,
         sweep: 60,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'RC',
-        number: 971,
+        // number: 971,
         width: 802,
         height: 97,
         sweep: 53,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'VILLOPOTO / STEWART',
-        number: 983,
+        // number: 983,
         width: 808,
         height: 95,
         sweep: 55,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'KTM HIGH',
-        number: 994,
+        // number: 994,
         width: 810,
         height: 99,
         sweep: 40,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'VILLOPOTO/STEWART / HON CRF 2019+',
-        number: 996,
+        // number: 996,
         width: 811,
         height: 93,
         sweep: 49,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'RC / HON CRF 04-18 KAW KX/KXF 2006+',
-        number: 997,
+        // number: 997,
         width: 804,
         height: 105,
         sweep: 54,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'REED / WINDHAM',
-        number: 998,
+        // number: 998,
         width: 803,
         height: 98,
         sweep: 56,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     },
     {
         name: 'MCGRATH / KTM SX125-450 2016+',
-        number: 999,
+        // number: 999,
         width: 813,
         height: 79,
         sweep: 54,
-        type: 'Twinwall'
+        // type: 'Twinwall'
     }
 
 ]
@@ -472,56 +472,56 @@ let tusk = [
         width: 800,
         height: 121,
         sweep: 61,
-        type: 'Chub'
+        // type: 'Chub'
     },
     {
         name: 'KTM Bend',
         width: 811,
         height: 92,
         sweep: 52,
-        type: 'Chub'
+        // type: 'Chub'
     },
     {
         name: 'Moto Bend',
         width: 800,
         height: 99,
         sweep: 54,
-        type: 'Chub'
+        // type: 'Chub'
     },
     {
         name: 'YZ Bend',
         width: 803,
         height: 89,
         sweep: 60,
-        type: 'Chub'
+        // type: 'Chub'
     },
     {
         name: 'CR High Bend',
         width: 813,
         height: 95,
         sweep: 76,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'CR Mid Bend',
         width: 813,
         height: 89,
         sweep: 63.5,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'KX High Bend',
         width: 819,
         height: 102,
         sweep: 76,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'YZ High Bend',
         width: 813,
         height: 89,
         sweep: 76,
-        type: '7/8th'
+        // type: '7/8th'
     }
 
 ]
@@ -532,56 +532,56 @@ let phoneix = [
         width: 800,
         height: 70,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: '118 80',
         width: 800,
         height: 80,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: '118 90',
         width: 800,
         height: 90,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: '118 100',
         width: 800,
         height: 100,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: '78 70',
         width: 800,
         height: 70,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: '78 80',
         width: 800,
         height: 80,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: '78 90',
         width: 800,
         height: 90,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: '78 100',
         width: 800,
         height: 100,
         sweep: 57,
-        type: '7/8th'
+        // type: '7/8th'
     },
 
 ]
@@ -656,112 +656,112 @@ let ODI = [
         width: 802,
         height: 99,
         sweep: 54,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'McGRATH',
         width: 805,
         height: 77,
         sweep: 55,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'CHAMP',
         width: 805,
         height: 93,
         sweep: 55,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'KTM OE',
         width: 805,
         height: 95,
         sweep: 42,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'RC-HIGH',
         width: 805,
         height: 120,
         sweep: 54,
-        type: '7/8th'
+        // type: '7/8th'
     },
     {
         name: 'HON / KAW OE',
         width: 802,
         height: 99,
         sweep: 54,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'McGRATH',
         width: 805,
         height: 77,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'RC4 SIGNATURE',
         width: 805,
         height: 78,
         sweep: 54,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'CHAMP',
         width: 805,
         height: 93,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'COUNTRY BOY',
         width: 803,
         height: 92,
         sweep: 57,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'KTM OE',
         width: 805,
         height: 95,
         sweep: 42,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'KTM 16-18',
         width: 805,
         height: 87,
         sweep: 48,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'CR HIGH',
         width: 805,
         height: 95,
         sweep: 62,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'RC HIGH',
         width: 805,
         height: 120,
         sweep: 54,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'FMX',
         width: 800,
         height: 121,
         sweep: 55,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
     {
         name: 'YZ OE',
         width: 802,
         height: 90,
         sweep: 52,
-        type: '1-1/8th'
+        // type: '1-1/8th'
     },
 
 
@@ -880,7 +880,7 @@ let sortBySweep = function () {
         (h1, h2) => (h1.sweep < h2.sweep) ? 1 : (h1.sweep > h2.sweep) ? -1 : 0)
 }
 
-
+// function to produce tables with filters and callback
 function produceTable(handlebarBrand, callback) {
     // create header that has name of bar manufacturer
 
@@ -913,14 +913,52 @@ function produceTable(handlebarBrand, callback) {
             tr.append(td) // append the cell to the end of the current table row
         }
         myTableNode.append(tr)
-        // callback()
+        callback()
+    })
+
+}
+
+// function without callback to produce tables
+function produceTable2(handlebarBrand) {
+    // create header that has name of bar manufacturer
+
+    // create Table Header for each name / width / height / sweep
+    let nameTH = document.createElement('th')
+    nameTH.innerHTML = 'Name'
+    myTableNode.append(nameTH)
+
+    let widthTH = document.createElement('th')
+    widthTH.innerHTML = 'Width'
+    myTableNode.append(widthTH)
+    let heightTH = document.createElement('th')
+    heightTH.innerHTML = 'Height'
+    myTableNode.append(heightTH)
+    let sweepTH = document.createElement('th')
+    sweepTH.innerHTML = 'Sweep'
+    myTableNode.append(sweepTH)
+
+
+    // process each entry in the data source
+    handlebarBrand.forEach(entry => {
+        let tr = document.createElement('tr')
+
+        // process each field in the data entry
+        for (let key in entry) {
+            let td = document.createElement('td')
+            // create a new table cell element
+            td.innerHTML = (entry[key])
+            //set its inner text
+            tr.append(td) // append the cell to the end of the current table row
+        }
+        myTableNode.append(tr)
+
     })
 
 }
 
 
-produceTable(mika)
-// produceTable(astra)
+produceTable2(mika)
+produceTable2(astra)
 
 
 //set up button to run search function ???? unsure what I wanted to accomplish here 
