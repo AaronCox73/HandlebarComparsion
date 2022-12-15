@@ -923,10 +923,11 @@ function produceTable2(handlebarBrand) {
     // create header that has name of bar manufacturer
 
     // create Table Header for each name / width / height / sweep
+    let table = document.createElement('table')
+
     let nameTH = document.createElement('th')
     nameTH.innerHTML = 'Name'
     myTableNode.append(nameTH)
-
     let widthTH = document.createElement('th')
     widthTH.innerHTML = 'Width'
     myTableNode.append(widthTH)
@@ -956,9 +957,6 @@ function produceTable2(handlebarBrand) {
 
 }
 
-
-produceTable2(mika)
-produceTable2(astra)
 
 
 //set up button to run search function ???? unsure what I wanted to accomplish here 
@@ -996,6 +994,15 @@ sortBySweepBtn.addEventListener('click', function () {
     })
 
 })
+
+produceTable2(mika)
+produceTable2(astra)
+produceTable2(protaper)
+produceTable2(renthal)
+produceTable2(tusk)
+produceTable2(phoneix)
+produceTable2(ODI)
+
 
 
 function findSimilarBar() {
