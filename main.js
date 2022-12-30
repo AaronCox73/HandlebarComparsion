@@ -1025,9 +1025,12 @@ function findSimilarBar() {
     function yourHandleBar() {
         console.log(widthBox.value, heightBox.value, sweepBox.value)
 
-        // let result = handlebars.filter(handlebars[0].width === widthBox.value)
-        const yourHandlebarswidth = handlebars.filter(handlebars => handlebars.width === widthBox.value)
-        console.log(yourHandlebarswidth)
+        const yourHandlebarsWidth = handlebars.filter(handlebars => handlebars.width === +(widthBox.value))
+        const yourHandlebarsHeight = handlebars.filter(handlebars => handlebars.height === +(heightBox.value))
+        const yourHandlebarsSweep = handlebars.filter(handlebars => handlebars.sweep === +(sweepBox.value))
+        console.log(yourHandlebarsWidth)
+        console.log(yourHandlebarsHeight)
+        console.log(yourHandlebarsSweep)
     }
 
     // when go is clicked run this click function
