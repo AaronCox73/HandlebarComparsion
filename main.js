@@ -927,16 +927,16 @@ function produceTable2(handlebarBrand) {
 
     let nameTH = document.createElement('th')
     nameTH.innerHTML = 'Name'
-    myTableNode.append(nameTH)
+    table.append(nameTH)
     let widthTH = document.createElement('th')
     widthTH.innerHTML = 'Width'
-    myTableNode.append(widthTH)
+    table.append(widthTH)
     let heightTH = document.createElement('th')
     heightTH.innerHTML = 'Height'
-    myTableNode.append(heightTH)
+    table.append(heightTH)
     let sweepTH = document.createElement('th')
     sweepTH.innerHTML = 'Sweep'
-    myTableNode.append(sweepTH)
+    table.append(sweepTH)
 
 
     // process each entry in the data source
@@ -951,10 +951,10 @@ function produceTable2(handlebarBrand) {
             //set its inner text
             tr.append(td) // append the cell to the end of the current table row
         }
-        myTableNode.append(tr)
+        table.append(tr)
 
     })
-
+    document.body.append(table)
 }
 
 
@@ -1003,7 +1003,7 @@ produceTable2(tusk)
 produceTable2(phoneix)
 produceTable2(ODI)
 
-
+console.log(handlebars[0].width)
 
 function findSimilarBar() {
     // select boxes
@@ -1013,22 +1013,49 @@ function findSimilarBar() {
 
     // select the value within the boxes
     widthBox.addEventListener('keyup', function (e) {
-        console.log(this.value)
+        widthBox.value
     })
     heightBox.addEventListener('keyup', function (e) {
-        console.log(this.value)
+        heightBox.value
     })
     sweepBox.addEventListener('keyup', function (e) {
-        console.log(this.value)
+        sweepBox.value
     })
 
-    // make if statement if number is within 2 mil 
-    // of inputs produce a table with these handlebars 
+    function yourHandleBar() {
+        console.log(widthBox.value, heightBox.value, sweepBox.value)
 
+        // let result = handlebars.filter(handlebars[0].width === widthBox.value)
+        const yourHandlebarswidth = handlebars.filter(handlebars => handlebars.width === widthBox.value)
+        console.log(yourHandlebarswidth)
+    }
 
-    //if widthBox.value is === entry key (?) +2 or -2 
+    // when go is clicked run this click function
+    goBtn.addEventListener('click', function () {
+        // if the boxes have no values alert user to fill in ALL info
+        if (heightBox.value === '' || widthBox.value === '' || sweepBox.value === '') {
+            window.alert('Please Fill Out All Boxes')
+            return false
+        } else {
+            yourHandleBar()
+        }
+    })
+
+    /*
+    when go button is clicked take the values from 
+    widthboxinput, heightboxinput, and sweepboxinput
+    and filter according to those numbers 
+    */
+
 
     //when go is clicked it produces new table with similar handlebars .filter?
 }
 
 findSimilarBar()
+
+
+// make filtered tables delete old table 
+// if able add name of brand to name ${}
+// make tables scrollable 
+// add brand name to all filtered tables 
+// find something to do with renthal number and type
