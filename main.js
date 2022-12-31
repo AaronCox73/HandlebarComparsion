@@ -1003,7 +1003,6 @@ produceTable2(tusk)
 produceTable2(phoneix)
 produceTable2(ODI)
 
-console.log(handlebars[0].width)
 
 function findSimilarBar() {
     // select boxes
@@ -1025,12 +1024,15 @@ function findSimilarBar() {
     function yourHandleBar() {
         console.log(widthBox.value, heightBox.value, sweepBox.value)
 
-        const yourHandlebarsWidth = handlebars.filter(handlebars => handlebars.width === +(widthBox.value))
-        const yourHandlebarsHeight = handlebars.filter(handlebars => handlebars.height === +(heightBox.value))
-        const yourHandlebarsSweep = handlebars.filter(handlebars => handlebars.sweep === +(sweepBox.value))
-        console.log(yourHandlebarsWidth)
-        console.log(yourHandlebarsHeight)
-        console.log(yourHandlebarsSweep)
+        const yourHandlebars = handlebars.filter(handlebars => handlebars.width === +(widthBox.value)
+            && handlebars.height === +(heightBox.value)
+            && handlebars.sweep === +(sweepBox.value))
+
+
+
+        console.log(yourHandlebars)
+
+
     }
 
     // when go is clicked run this click function
