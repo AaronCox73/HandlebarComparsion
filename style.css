@@ -1,5 +1,5 @@
-table {
-    margin-top: 5%;
+/* table {
+  
     height: 10px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -10,44 +10,82 @@ table {
     display: block;
 
 }
+*/
 
-td,
-th {
+.table-style {
+    border-collapse: collapse;
+    width: 95%;
 
-    border: 1px solid #dddddd;
+    overflow-y: scroll;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.table-style th,
+.table-style td {
     text-align: left;
     padding: 8px;
 }
 
+.table-style tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-style th {
+    background-color: black;
+    color: white;
+}
+
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #b2b1b1;
 }
 
 .dropdown {
-    display: inline-block;
     position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 100%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    min-width: 160px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content button {
-    display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
+#filterBtn {
+    background-color: #030403;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
 }
 
-.dropdown-content button:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+#alphaBtn,
+#sortByWidth,
+#sortByHeight,
+#sortBySweep {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#alphaBtn:hover,
+#sortByWidth:hover,
+#sortByHeight:hover,
+#sortBySweep:hover {
+    background-color: #ddd;
 }

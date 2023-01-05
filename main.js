@@ -929,10 +929,9 @@ function produceTable2(handlebarBrand, name) {
 
     // create Table Header for each name / width / height / sweep
     let table = document.createElement('table')
+    table.setAttribute('class', 'table-style');
 
-    // let brandTH = document.createElement('th')
-    // brandTH.innerHTML = 
-    // table.append(brandTH) 
+
     let nameTH = document.createElement('th')
     nameTH.innerHTML = `${name}`
     table.append(nameTH)
