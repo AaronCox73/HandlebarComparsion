@@ -3,7 +3,7 @@ let protaper = [
         name: 'Carmichael',
         width: 800,
         height: 77,
-        sweep: 55
+        sweep: 55,
     },
     {
         name: 'Henry / Reed',
@@ -884,7 +884,7 @@ let sortBySweep = function () {
 function produceTable(handlebarBrand, callback) {
     if (produceTable === true) {
         // get rid of function here
-        delete (produceTable())
+
     } else {
         // create header that has name of bar manufacturer
 
@@ -924,14 +924,17 @@ function produceTable(handlebarBrand, callback) {
 }
 
 // function without callback to produce tables
-function produceTable2(handlebarBrand) {
+function produceTable2(handlebarBrand, name) {
     // create header that has name of bar manufacturer
 
     // create Table Header for each name / width / height / sweep
     let table = document.createElement('table')
 
+    // let brandTH = document.createElement('th')
+    // brandTH.innerHTML = 
+    // table.append(brandTH) 
     let nameTH = document.createElement('th')
-    nameTH.innerHTML = 'Name'
+    nameTH.innerHTML = `${name}`
     table.append(nameTH)
     let widthTH = document.createElement('th')
     widthTH.innerHTML = 'Width'
@@ -1000,13 +1003,13 @@ sortBySweepBtn.addEventListener('click', function () {
 
 })
 
-produceTable2(mika)
-produceTable2(astra)
-produceTable2(protaper)
-produceTable2(renthal)
-produceTable2(tusk)
-produceTable2(phoneix)
-produceTable2(ODI)
+produceTable2(mika, 'Mika Handlebars')
+produceTable2(astra, 'Astra Handlebars')
+produceTable2(protaper, 'Protaper Handlebars')
+produceTable2(renthal, 'Renthal Handlebars')
+produceTable2(tusk, 'Tusk Handlebars')
+produceTable2(phoneix, 'Phoneix Handlebars')
+produceTable2(ODI, 'ODI Handlebars')
 
 
 
@@ -1047,18 +1050,6 @@ goBtn.addEventListener('click', function () {
         yourHandleBar()
     }
 })
-
-/*
-when go button is clicked take the values from
-widthboxinput, heightboxinput, and sweepboxinput
-and filter according to those numbers
-*/
-
-
-    //when go is clicked it produces new table with similar handlebars .filter?
-
-
-
 
 
 // make filtered tables delete old table 
