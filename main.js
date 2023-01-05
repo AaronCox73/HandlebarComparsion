@@ -1004,59 +1004,56 @@ produceTable2(phoneix)
 produceTable2(ODI)
 
 
-function findSimilarBar() {
-    // select boxes
-    let widthBox = document.getElementById('widthBox')
-    let heightBox = document.getElementById('heightBox')
-    let sweepBox = document.getElementById('sweepBox')
 
-    // select the value within the boxes
-    widthBox.addEventListener('keyup', function (e) {
-        widthBox.value
-    })
-    heightBox.addEventListener('keyup', function (e) {
-        heightBox.value
-    })
-    sweepBox.addEventListener('keyup', function (e) {
-        sweepBox.value
-    })
+// select boxes
+let widthBox = document.getElementById('widthBox')
+let heightBox = document.getElementById('heightBox')
+let sweepBox = document.getElementById('sweepBox')
 
-    function yourHandleBar() {
-        console.log(widthBox.value, heightBox.value, sweepBox.value)
+// select the value within the boxes
+widthBox.addEventListener('keyup', function (e) {
+    widthBox.value
+})
+heightBox.addEventListener('keyup', function (e) {
+    heightBox.value
+})
+sweepBox.addEventListener('keyup', function (e) {
+    sweepBox.value
+})
 
-        const yourHandlebars = handlebars.filter(handlebars => handlebars.width === +(widthBox.value)
-            && handlebars.height === +(heightBox.value)
-            && handlebars.sweep === +(sweepBox.value))
+function yourHandleBar() {
+    // console.log(widthBox.value, heightBox.value, sweepBox.value)
 
+    const yourHandlebars = handlebars.filter(handlebars => handlebars.width === +(widthBox.value)
+        && handlebars.height === +(heightBox.value)
+        && handlebars.sweep === +(sweepBox.value))
 
+    produceTable2(yourHandlebars)
 
-        console.log(yourHandlebars)
+}
 
-
+// when go is clicked run this click function
+goBtn.addEventListener('click', function () {
+    // if the boxes have no values alert user to fill in ALL info
+    if (heightBox.value === '' || widthBox.value === '' || sweepBox.value === '') {
+        window.alert('Please Fill Out All Boxes')
+        return false
+    } else {
+        yourHandleBar()
     }
+})
 
-    // when go is clicked run this click function
-    goBtn.addEventListener('click', function () {
-        // if the boxes have no values alert user to fill in ALL info
-        if (heightBox.value === '' || widthBox.value === '' || sweepBox.value === '') {
-            window.alert('Please Fill Out All Boxes')
-            return false
-        } else {
-            yourHandleBar()
-        }
-    })
-
-    /*
-    when go button is clicked take the values from 
-    widthboxinput, heightboxinput, and sweepboxinput
-    and filter according to those numbers 
-    */
+/*
+when go button is clicked take the values from
+widthboxinput, heightboxinput, and sweepboxinput
+and filter according to those numbers
+*/
 
 
     //when go is clicked it produces new table with similar handlebars .filter?
-}
 
-findSimilarBar()
+
+
 
 
 // make filtered tables delete old table 
