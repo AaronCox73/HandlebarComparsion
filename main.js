@@ -882,45 +882,42 @@ let sortBySweep = function () {
 
 // function to produce tables with filters and callback
 function produceTable(handlebarBrand, callback) {
-    if (produceTable === true) {
-        // get rid of function here
 
-    } else {
-        // create header that has name of bar manufacturer
+    // create header that has name of bar manufacturer
 
-        // create Table Header for each name / width / height / sweep
-        let nameTH = document.createElement('th')
-        nameTH.innerHTML = 'Name'
-        myTableNode.append(nameTH)
+    // create Table Header for each name / width / height / sweep
+    let nameTH = document.createElement('th')
+    nameTH.innerHTML = 'Name'
+    myTableNode.append(nameTH)
 
-        let widthTH = document.createElement('th')
-        widthTH.innerHTML = 'Width'
-        myTableNode.append(widthTH)
-        let heightTH = document.createElement('th')
-        heightTH.innerHTML = 'Height'
-        myTableNode.append(heightTH)
-        let sweepTH = document.createElement('th')
-        sweepTH.innerHTML = 'Sweep'
-        myTableNode.append(sweepTH)
+    let widthTH = document.createElement('th')
+    widthTH.innerHTML = 'Width'
+    myTableNode.append(widthTH)
+    let heightTH = document.createElement('th')
+    heightTH.innerHTML = 'Height'
+    myTableNode.append(heightTH)
+    let sweepTH = document.createElement('th')
+    sweepTH.innerHTML = 'Sweep'
+    myTableNode.append(sweepTH)
 
 
-        // process each entry in the data source
-        handlebarBrand.forEach(entry => {
-            let tr = document.createElement('tr')
+    // process each entry in the data source
+    handlebarBrand.forEach(entry => {
+        let tr = document.createElement('tr')
 
-            // process each field in the data entry
-            for (let key in entry) {
-                let td = document.createElement('td')
-                // create a new table cell element
-                td.innerHTML = (entry[key])
-                //set its inner text
-                tr.append(td) // append the cell to the end of the current table row
-            }
-            myTableNode.append(tr)
-            callback()
-        })
+        // process each field in the data entry
+        for (let key in entry) {
+            let td = document.createElement('td')
+            // create a new table cell element
+            td.innerHTML = (entry[key])
+            //set its inner text
+            tr.append(td) // append the cell to the end of the current table row
+        }
+        myTableNode.append(tr)
+        callback()
+    })
 
-    }
+
 }
 
 // function without callback to produce tables
@@ -1001,18 +998,16 @@ sortBySweepBtn.addEventListener('click', function () {
     })
 
 })
+goBtn.addEventListener('click', function () {
+    // if the boxes have no values alert user to fill in ALL info
+    if (heightBox.value === '' || widthBox.value === '' || sweepBox.value === '') {
+        window.alert('Please Fill Out All Boxes')
+        return false
+    } else {
+        yourHandleBar()
+    }
+})
 
-produceTable2(mika, 'Mika Handlebars')
-produceTable2(astra, 'Astra Handlebars')
-produceTable2(protaper, 'Protaper Handlebars')
-produceTable2(renthal, 'Renthal Handlebars')
-produceTable2(tusk, 'Tusk Handlebars')
-produceTable2(phoneix, 'Phoneix Handlebars')
-produceTable2(ODI, 'ODI Handlebars')
-
-
-
-// select boxes
 let widthBox = document.getElementById('widthBox')
 let heightBox = document.getElementById('heightBox')
 let sweepBox = document.getElementById('sweepBox')
@@ -1028,6 +1023,7 @@ sweepBox.addEventListener('keyup', function (e) {
     sweepBox.value
 })
 
+
 function yourHandleBar() {
     // console.log(widthBox.value, heightBox.value, sweepBox.value)
 
@@ -1039,20 +1035,27 @@ function yourHandleBar() {
 
 }
 
+
+
+
+produceTable2(mika, 'Mika Handlebars')
+produceTable2(astra, 'Astra Handlebars')
+produceTable2(protaper, 'Protaper Handlebars')
+produceTable2(renthal, 'Renthal Handlebars')
+produceTable2(tusk, 'Tusk Handlebars')
+produceTable2(phoneix, 'Phoneix Handlebars')
+produceTable2(ODI, 'ODI Handlebars')
+
+
+
+// select boxes
+
+
 // when go is clicked run this click function
-goBtn.addEventListener('click', function () {
-    // if the boxes have no values alert user to fill in ALL info
-    if (heightBox.value === '' || widthBox.value === '' || sweepBox.value === '') {
-        window.alert('Please Fill Out All Boxes')
-        return false
-    } else {
-        yourHandleBar()
-    }
-})
 
 
 // make filtered tables delete old table 
-// if able add name of brand to name ${}
+
 // make tables scrollable 
 // add brand name to all filtered tables 
-// find something to do with renthal number and type
+
